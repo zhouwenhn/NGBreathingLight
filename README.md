@@ -23,7 +23,8 @@ BreathingLight.stopBreathing(findViewById(R.id.any_view));
 
 <img src="img/s2.png"/>
 
-##代码实现就是：
+####代码实现：
+
 ```java
     private static double getBreathingY(long time, int n, int t) {
         float k = 1.0f / 3;
@@ -41,5 +42,4 @@ BreathingLight.stopBreathing(findViewById(R.id.any_view));
         return 0;
     }
 ```
-
-##这里关键是要在一个周期之后传入一个新的 n，我的做法就是判断  if (diffTime > n * t) 然后使 n++;
+关键是要在一个周期之后传入一个新的 n，做法就是判断  if (diffTime > n * t) 然后使 n++;
